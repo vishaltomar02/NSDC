@@ -7,14 +7,26 @@ import SponsorsComponent from './Sponsors';
 import useScrollHook from '../CustomHooks/useScrollHook';
 import DogVideo from '../videos/dog-video.mp4';
 import PosterImage from '../images/video-poster.png';
+import workshopImage from '../images/workshop.jpg';
 import Loader from '../Loader/Loader';
 
 const imagesArray = [
-  'https://dkprodimages.gumlet.com/AMTM2503_Cover.jpg?format=webp&w=400&dpr=2.6',
-  'https://bluecrossofindia.org/wp-content/uploads/2017/06/3.jpg',
-  'https://kalyaniawf.org.in/images/G05.jpg',
-  'https://imgstaticcontent.lbb.in/lbbnew/wp-content/uploads/sites/1/2015/09/Animal_shelters.jpg?w=1200&h=628&fill=blur&fit=fill',
-  'https://i.pinimg.com/originals/05/64/25/05642599e307500e58746d0ad8d2de7f.jpg'
+  {
+    imageSrc: workshopImage,
+    text: 'Participating in a workshop organized by Central government in New Delhi, in order to impart knowledge in skill development programs , MSDE has mentored a lot of people from different states.'
+  },
+  {
+    imageSrc: 'https://bluecrossofindia.org/wp-content/uploads/2017/06/3.jpg',
+    text: 'Participating in a workshop organized by Central government in New Delhi, in order to impart knowledge in skill development programs , MSDE has mentored a lot of people from different states.'
+
+  },
+  {
+    imageSrc: 'https://kalyaniawf.org.in/images/G05.jpg',
+    text: 'Participating in a workshop organized by Central government in New Delhi, in order to impart knowledge in skill development programs , MSDE has mentored a lot of people from different states.'
+
+  }
+  // 'https://imgstaticcontent.lbb.in/lbbnew/wp-content/uploads/sites/1/2015/09/Animal_shelters.jpg?w=1200&h=628&fill=blur&fit=fill',
+  // 'https://i.pinimg.com/originals/05/64/25/05642599e307500e58746d0ad8d2de7f.jpg'
 ];
 
 
