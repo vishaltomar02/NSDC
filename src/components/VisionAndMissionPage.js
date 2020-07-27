@@ -20,14 +20,15 @@ const VisionAndMissionPage = () => {
           <div className="vision-container">
             <div className="content">
               <section className="about-page-header">
-                <h1>Animal Welfare Society</h1>
+                {/* <h1>Animal Welfare Society</h1> */}
                 <br></br>
                 <p>
-                  Karma foundation’s vision & mission is to help our street animals in the best possible way utilizing the available resources optimally.</p>
+                  With a clear vision to take part in social activities of development in various sectors , Praman Techno Foundation has been established to carry development programs on its shoulder.
+                </p>
                 <p>
-                  We truly believe that to achieve success & to make a difference we need to utilize the existing resources & make each and every animal lover a part of the NGO.
-            </p>
-                <p>
+                  Education , Employment , skill development , Rural development and many sectors are youth demand , we are delight to present our mission to enhance capability of an individual at such extent so that they can understand the need of skills in today world.
+                </p>
+                {/* <p>
                   We believe in utilizing the existing work force of Vets & volunteers to help the animals in need area wise & funding the treatment of such stray animals in a subsidized & case merit basis.
             </p>
                 <p>
@@ -35,7 +36,7 @@ const VisionAndMissionPage = () => {
             </p>
                 <p>
                   Once we have success in Pune, we will expand to different cities with the same model.
-            </p>
+            </p> */}
               </section>
             </div>
           </div>

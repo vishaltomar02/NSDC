@@ -21,15 +21,21 @@ const HomePage = () => {
             <div className="about-content-container">
               <section className="content">
                 <section className="about-page-header">
-                  <h1>Work We Do</h1>
+                  <h1>About Praman Techno Foundation</h1>
                 </section>
                 <br></br>
-                <h4>Animal rescue</h4>
-                <p>There are so many animals day in & day out that are subjected to cruelty, road rage or just medical issues. Karma Foundation works towards helping such animals either on site or by admitting them into our facility.</p>
-                <h4>Animal Birth Control(ABC)</h4>
-                <p>Karma foundation truly believes that the best way to reduce animal – human conflict & animal – animal conflict is birth control. We conduct ABC surgeries twice a week at our facility & keep the animal for Post Operative care until they are fit to be release back where they were picked up from.</p>
-                <h4>Animal Adoption</h4>
-                <p>Our team of Adoption volunteers work day in & day out finding good homes for the stray & abandoned animals. Every adoption happens after a strict screening & house visit by our approved volunteers.</p>
+                {/* <h4></h4> */}
+                <p>
+                  Praman Techno Foundation Established in March 2020 as a Society under Society registration act, 1860, with a wide experienced team, pioneer in education sector, Mr. Nishant Sharma transformed his ideas of manipulation into a Foundation which not only Transform skills into jobs but also help in developing nation in various sectors such as Education, skill development, health and wellness, entertainment, agriculture and many more which further help to attain a sustainable environment.
+                </p>
+                {/* <h4>Animal Birth Control(ABC)</h4> */}
+                <p>
+                  Responsibility, Hardwork, innovation and Perfection are the four main strengths  of the Praman Techno Foundation and we at Praman believe to work towards the overall performance and caliber along with a focus towards need in Education sector, health sector  and more importantly in skill development and social awareness.This devotion , dedication and firm determination constantly drive the professionals at Praman Techno Foundation to work towards achievement of goals and assisting trainees to hit the bull’s eye.
+                </p>
+                {/* <h4>Animal Adoption</h4> */}
+                <p>
+                  Team Praman with an expert panel reaches out to a wide range of services including Project Management, HR Consulting, Skill development and Livelihood Projects with an employee base in Meerut, Uttar Pradesh; we are trying to locate in Delhi NCR Region.
+                </p>
               </section>
             </div>
           </div>

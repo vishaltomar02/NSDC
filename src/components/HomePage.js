@@ -11,6 +11,7 @@ import workshopImage from '../images/workshop.jpg';
 import reviewMeeting from '../images/review-meet.jpg';
 import counsellingImage from '../images/counselling.jpg';
 import healthAwareness from '../images/health-awareness.jpg';
+import skillDevelopmentImage from '../images/skill-development.jpeg';
 import Loader from '../Loader/Loader';
 
 const imagesArray = [
@@ -33,6 +34,11 @@ const imagesArray = [
     imageSrc: healthAwareness,
     headerText: 'Health Awareness Program',
     text: 'Health awareness program has been organized to spread awareness among people in rural areas. Health checkup oriented programs were also conducted.'
+  },
+  {
+    imageSrc: skillDevelopmentImage,
+    headerText: 'Skill Development',
+    text: ''
   }
   // 'https://imgstaticcontent.lbb.in/lbbnew/wp-content/uploads/sites/1/2015/09/Animal_shelters.jpg?w=1200&h=628&fill=blur&fit=fill',
   // 'https://i.pinimg.com/originals/05/64/25/05642599e307500e58746d0ad8d2de7f.jpg'
@@ -59,7 +65,7 @@ const HomePage = () => {
           </div>
           <div className="welcome-content-container">
             <div className={`welcome-header-text ${inView ? 'fade-up' : ''}`}>
-              <h1 ref={setRef}>Welcome to Karma Foundation</h1>
+              <h1 ref={setRef}>Welcome to Praman Techno Foundation</h1>
             </div>
             <div className="welcome-story">
               <section className="welcome-video">
