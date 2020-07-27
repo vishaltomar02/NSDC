@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink} from 'react-router-dom';
-import KarmaFoundationLogo from '../images/karma-logo.jpg'
+import AppLogo from '../images/app-logo.jpeg';
 
 const navOptions = [
   { name: 'Home', pathname: '/home'},
@@ -26,7 +26,7 @@ const MenuNav = (props) => {
     <div className="menu-nav">
       <section className="menu-nav-inner">
         <a className="logo-container" href=" ">
-          <img style={{ height: '100px', width: '100px' }} src={KarmaFoundationLogo} alt="Karma Foundation" />
+          <img style={{ height: '100px', width: '100px' }} src={AppLogo} alt="Karma Foundation" />
         </a>
         <ul className="nav-options-container">
           {navOptions.map((item) => {

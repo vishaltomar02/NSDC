@@ -1016,4 +1016,50 @@ button.top-buttons {
   box-shadow: 5px 5px 5px rgba(0,0,0, 0.125), -5px -5px 5px rgba(0,0,0, 0.125);
   padding: 1.5em;
   border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.volunteer-inner .volunteer-input {
+  margin-bottom: 1em;
+  width: 60%;
+  position: relative;
+}
+
+.volunteer-inner .volunteer-label
+{
+  margin-top: -3em;
+  box-shadow: 0 5px 11px rgba(0,0,0,0.18);
+  margin-bottom: 1em;
+  text-transform: uppercase;
+  border-radius: 10px;
+  width: 100%;
+  padding: 1em;
+  text-align: center;
+  font-size: 1.4em;
+  color: var(--primary-app-color);
+  background: var(--font-color);
+}
+
+.volunteer-inner .volunteer-input .input-control {
+  padding: 0.6em 1.5em 0.8em 3em;
+  width: 100%;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid rgba(0,0,0, 0.3);
+  box-shadow: none;
+  transition: border-bottom 0.2s ease-in;
+}
+
+.volunteer-inner .volunteer-input .input-control:focus{
+  border-bottom: 2px solid var(--primary-app-color);
+}
+
+.volunteer-inner .volunteer-input label {
+  position: absolute;
+  left: 1em;
+  top: 0.6em;
 }
