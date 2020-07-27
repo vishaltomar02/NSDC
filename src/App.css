@@ -321,6 +321,12 @@ button.top-buttons {
   display: flex;
 }
 
+.slides-container
+{
+  height: 100%;
+  width: 100%;
+}
+
 .slides {
   height: 100%;
   width: 100%;
