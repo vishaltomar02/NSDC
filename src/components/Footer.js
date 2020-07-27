@@ -42,7 +42,12 @@ const Footer = () => {
           <div><i class="fas fa-globe-asia"></i></div>
           <div className="karma-address">
             <span >Karma Foundation</span>
-            <p style={{textTransform:'none',fontSize: '13px'}}> Bunglow No. 1, jacinta Villa, Opp. Sandalwood Society, Near Ambedkar Chowk,Near Medipoint Hospital, Aundh, Pune-4110007</p>
+            <p style={{textTransform:'none',fontSize: '13px'}}>
+              Address: 21/4, Krishna Puram, Baghpat Road, Meerut, 250002.
+            </p>
+            <p style={{textTransform:'none',fontSize: '13px'}}>
+              Phone: 9897941722, 9870966955
+            </p>
           </div>
         </div>
       </div>

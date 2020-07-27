@@ -38,10 +38,10 @@ const MenuNav = (props) => {
             );
           })}
         </ul>
-        <div className="nav-buttons">
+        {/* <div className="nav-buttons">
           <button className="shadow-buttons" style={{ marginRight: '10px' }}>Donate Now</button>
           <button className="shadow-buttons">Login</button>
-        </div>
+        </div> */}
       </section>
     </div>
   );

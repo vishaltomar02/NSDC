@@ -29,7 +29,7 @@ const Sponsors = () => {
           sponsorsCards.map((item, index) => {
             return (
               <div className="sponsor-card">
-                <img src={item.imageSrc} style={{ height: '150px', width: '150px', borderRadius: '50%' }} alt="could not display"></img>
+                <img src={item.imageSrc} style={{ height: '150px', width: '150px'}} alt="could not display"></img>
                 <h2 style={{marginTop: '20px'}}>{item.sponsorName}</h2>
                 <a href='www.google.com' >Website</a>
               </div>

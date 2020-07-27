@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import CommonStrip from './CommonStrip';
 import Loader from '../Loader/Loader';
 
 const BecomeAVolunteerPage = () => {
@@ -16,8 +15,8 @@ const BecomeAVolunteerPage = () => {
     <div>
       {
         loader ? <Loader /> :
-          <div>
-            <CommonStrip title="Becomem A Volunteer" />
+          <div className="volunteer-form-container">
+            <div className="volunteer-inner"></div>
           </div>
       }
     </div>
