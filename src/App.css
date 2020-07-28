@@ -564,16 +564,19 @@ button.top-buttons {
 }
 
 .big-cards-container .what-we-do-card {
-  height: 480px;
   width: 100%;
+  padding: 1em;
+  height: 380px;
   position: relative;
-  display: flex;
-  flex-direction: column;
   opacity: 0;
   transform: translateY(100%);
   overflow: hidden;
   transition: all 0.3s ease-in;
   box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.2), -2px -2px 10px 2px rgba(0,0,0,0.1);
+}
+
+.big-cards-container .what-we-do-card .cards {
+  height: 100%;
 }
 
 .what-we-do-card .read-more {
@@ -591,26 +594,40 @@ button.top-buttons {
 }
 
 .big-cards-container .what-we-do-card .image-container {
-  position: relative;
-  height: 45%;
+  height: 70%;
   width: 100%;
   overflow: hidden;
 }
 
-
-.what-we-do-card .image-container .hover-content{
-  position: absolute;
+.big-cards-container .what-we-do-card .image-container img {
   height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.what-we-do-card .cards .hover-content{
+  position: absolute;
+  height: 0;
   width: 100%;
   top: 0;
   left: 0;
-  transform: translateY(-100%);
   opacity: 0;
-  background: #b3eeffa6;
-  transition: opacity 0.2s ease-in-out, transform 0.3s ease-in-out;
+  background: var(--primary-app-color);
+  color: white;
+  font-weight: 400;
+  transition: all 0.4s ease-in;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.what-we-do-card .cards .hover-content .what-we-do-text {
+  padding: 2em 1em;
+  height: 90%;
+  color: inherit;
+  font-size: 18px;
+  text-align: center;
+  overflow: hidden;
 }
 
 .what-we-do-card .cards::after {
@@ -627,10 +644,15 @@ button.top-buttons {
 }
 
 
-.image-container:hover .hover-content, .what-we-do-card:hover .cards::after
+ .what-we-do-card:hover .cards::after
 {
   opacity: 1;
   transform: none;
+}
+
+.what-we-do-card:hover .cards .hover-content {
+  height: 100%;
+  opacity: 1;
 }
 
 .what-we-do-card .image-container .hover-content i.fa.fa-link {
@@ -650,11 +672,6 @@ button.top-buttons {
   height: 100%;
   width: 100%;
   object-fit: cover;
-}
-
-.what-we-do-text {
-  max-height: 33%;
-  overflow: hidden;
 }
 
 .what-we-do-text.read-more-text {

@@ -29,21 +29,19 @@ const WhatWeDoCards = () => {
 
   const [ref, inView] = useScrollHook({ threshold: 0, triggerOnce: false });
 
-  const handleReadMore = (id) => {
-    const element = document.getElementById(id);
-    const buttonElem = document.getElementById(`${id}-button`)
-    if(element.classList.contains('read-more-text')) 
-    {
-      buttonElem.innerText = 'Read More';
-      element.classList.remove('read-more-text');
-    }
-    else
-    {
-      element.classList.add('read-more-text');
-      buttonElem.innerText = 'See Less';
-    }
-    console.log(element);
-  }
+  // const handleReadMore = (id) => {
+  //   const element = document.getElementById(id);
+  //   const buttonElem = document.getElementById(`${id}-button`)
+  //   if (element.classList.contains('read-more-text')) {
+  //     buttonElem.innerText = 'Read More';
+  //     element.classList.remove('read-more-text');
+  //   }
+  //   else {
+  //     element.classList.add('read-more-text');
+  //     buttonElem.innerText = 'See Less';
+  //   }
+  //   console.log(element);
+  // }
 
   return (
     <div ref={ref} className="what-we-do-container" >
@@ -54,20 +52,19 @@ const WhatWeDoCards = () => {
         {imagesArray.map((item, index) => {
           return (
             <div key={index} style={inView ? { transitionDelay: `${0.2 * (index + 1)}s` } : {}} className={`what-we-do-card ${inView ? 'appear' : ''}`}>
-              <div className="cards" style={{overflow: 'hidden'}}>
+              <div className="cards" style={{ overflow: 'hidden' }}>
                 <div className="image-container">
                   <img src={item.imageSrc} alt="Could not display"></img>
                   <div className="hover-content">
-                    <i class="fa fa-link"></i>
+                    <p id={index} class="what-we-do-text">{item.textContent}</p>
                   </div>
                 </div>
                 <h3 style={{ padding: '0.8em 1em 0.8em', fontWeight: 'normal' }}>{item.headerText}</h3>
-                <p id={index} style={{ padding: '0 1em 1em' }} class="what-we-do-text">{item.textContent}</p>
               </div>
-              <div className="read-more" onClick={() => handleReadMore(index)}>
+              {/* <div className="read-more" onClick={() => handleReadMore(index)}>
                 <i class="fas fa-arrow-circle-right"></i>&nbsp;
                 <span id={`${index}-button`}>Read More</span>
-              </div>
+              </div> */}
             </div>
           )
         })}
