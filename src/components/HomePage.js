@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import Carousel from './Carousel';
 import JoinTeam from './JoinTeam';
 import WhatWeDoCards from './WhatWeDoCards';
-import NewsAndEvents from './NewsAndEvents';
 import SponsorsComponent from './Sponsors';
 import useScrollHook from '../CustomHooks/useScrollHook';
 import DogVideo from '../videos/dog-video.mp4';
@@ -91,7 +90,7 @@ const HomePage = () => {
           </div>
           <JoinTeam />
           <WhatWeDoCards />
-          <NewsAndEvents />
+          <div className="divider"></div>
           <SponsorsComponent />
         </div>}
     </div>
