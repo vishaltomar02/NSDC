@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink} from 'react-router-dom';
-import AppLogo from '../images/app-logo.jpeg';
+import AppLogo from '../images/praman-logo.jpeg';
 
 const navOptions = [
   { name: 'Home', pathname: '/home'},
