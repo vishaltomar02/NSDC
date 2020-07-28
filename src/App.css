@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  --primary-app-color: #B3EEFF;
+  --primary-app-color: #10C9F8;
   --font-color: #151426;
 }
 
@@ -28,7 +28,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .header {
   height: 5.5vh;
   width: 100vw;
-  background: var(--font-color);
+  background: linear-gradient(to bottom right, #122C5B , #10C9F8);
 }
 
 .header-inner {
@@ -765,7 +765,7 @@ button.top-buttons {
 .footer-container {
   height: auto;
   width: 100%;
-  background: var(--font-color);
+  background: linear-gradient(to bottom right, #122C5B , #10C9F8);
   padding: 4em 12em;
   display: grid;
   font-size: 15px;
