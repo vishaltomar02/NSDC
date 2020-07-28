@@ -8,7 +8,7 @@ const VisionAndMissionPage = () => {
   useEffect(() => {
     setTimeout(() => {
       setLoader(false);
-    }, 3000);
+    }, 500);
   }, []);
 
 

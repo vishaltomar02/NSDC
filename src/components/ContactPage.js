@@ -16,7 +16,7 @@ const ContactPage = () => {
   useEffect(() => {
     setTimeout(() => {
       setLoader(false);
-    }, 3000);
+    }, 500);
   }, []);
 
   return (

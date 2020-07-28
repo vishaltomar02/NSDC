@@ -615,19 +615,35 @@ button.top-buttons {
   background: var(--primary-app-color);
   color: white;
   font-weight: 400;
-  transition: all 0.4s ease-in;
+  transition: height 0.4s ease, opacity 0.4s ease;
   display: flex;
   justify-content: center;
+  padding: 2em 1em;
   align-items: center;
 }
 
 .what-we-do-card .cards .hover-content .what-we-do-text {
-  padding: 2em 1em;
+  padding: 0 1em;
   height: 90%;
   color: inherit;
   font-size: 18px;
   text-align: center;
-  overflow: hidden;
+  overflow: overlay;
+}
+
+.what-we-do-card .cards .hover-content .what-we-do-text::-webkit-scrollbar {
+  width: 7px;
+}
+
+.what-we-do-card .cards .hover-content .what-we-do-text::-webkit-scrollbar-track {
+  box-shadow: inset 0px 0px 6px rgba(0, 0, 0, 0.3);
+  background-color: #f5f5ff;
+  border-radius: 10px;
+}
+
+.what-we-do-card .cards .hover-content .what-we-do-text::-webkit-scrollbar-thumb {
+  box-shadow: inset 0px 0px 6px rgba(0, 0, 0, 0.3);
+  background: #122C5B;
 }
 
 .what-we-do-card .cards::after {
@@ -653,6 +669,7 @@ button.top-buttons {
 .what-we-do-card:hover .cards .hover-content {
   height: 100%;
   opacity: 1;
+  overflow: overlay;
 }
 
 .what-we-do-card .image-container .hover-content i.fa.fa-link {
