@@ -38,6 +38,7 @@ const MenuNav = (props) => {
             );
           })}
         </ul>
+        <span className="hamburger-menu"></span>
         {/* <div className="nav-buttons">
           <button className="shadow-buttons" style={{ marginRight: '10px' }}>Donate Now</button>
           <button className="shadow-buttons">Login</button>

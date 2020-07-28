@@ -192,6 +192,7 @@ button.top-buttons {
 /* Menu Nav css starts from here*/
 
 .menu-nav {
+  position: relative;
   height: 100px;
   width: 100vw;
   padding: 1em;
@@ -214,6 +215,10 @@ button.top-buttons {
   width: 100px;
   display: inline-block;
   margin-top: -15px;
+}
+
+.hamburger-menu {
+  position: absolute;
 }
 
 .nav-options-container {
@@ -474,7 +479,7 @@ button.top-buttons {
   position: relative;
   width: 100%;
   background-image: url('./images/middle-image.jpeg');
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1096,4 +1101,10 @@ button.top-buttons {
   position: absolute;
   left: 1em;
   top: 0.6em;
+}
+
+.divider {
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(to bottom right, #122C5B , #10C9F8);
 }
