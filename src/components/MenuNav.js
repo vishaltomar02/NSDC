@@ -16,7 +16,8 @@ const MenuNav = (props) => {
 
   useEffect(() => {
     const { location: {pathname} } = props;
-    setSelectedNav(navOptions.find((item) => item.pathname === pathname).name);
+    const selectedItem = navOptions.find((item) => item.pathname === pathname);
+    setSelectedNav(selectedItem && selectedItem.name);
   },[props]);
 
   const activeNavItem = (name) => {
