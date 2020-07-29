@@ -52,9 +52,14 @@ const MenuNav = (props) => {
         <ul className={ `nav-options-container ${navSlide ? 'slide-in' : ''}`}>
           {navOptions.map((item) => {
             return (
-              <li key={item.name} className={`nav-option ${item.name === selectedNav ? 'active' : ''}`} onClick={() => activeNavItem(item.name)}>
+              <li key={item.name}
+                className={`nav-option ${item.name === selectedNav ? 'active' : ''}`}
+                onClick={() => activeNavItem(item.name)}>
                 {//eslint-disable-next-line
-                  <NavLink to={{pathname: item.pathname}}>{item.name}</NavLink>}
+                  <NavLink 
+                  className={`${navSlide ? 'open' : ''}`}
+                  //style={navSlide ? {animationDelay: `${0.2*(index+1)}s`}:{}}
+                  to={{pathname: item.pathname}}>{item.name}</NavLink>}
               </li>
             );
           })}
