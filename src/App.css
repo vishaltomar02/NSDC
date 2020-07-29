@@ -25,8 +25,13 @@ p, h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 
+.app.fixed-height {
+  overflow: hidden;
+  height: 100vh;
+}
+
 .header {
-  height: 5.5vh;
+  height: 5.5vh !important;
   width: 100vw;
   background: linear-gradient(to bottom right, #122C5B , #10C9F8);
 }
@@ -43,13 +48,13 @@ p, h1, h2, h3, h4, h5, h6 {
   grid-template-columns: 50% 25% 25%;
 }
 
-@media screen and (max-width: 992px)
+/* @media screen and (max-width: 992px)
 {
   .header-inner {
     margin: 0 7%;
   }
-}
-@media screen and (max-width: 768px)
+} */
+/* @media screen and (max-width: 768px)
 {
   .header{
     height: auto;
@@ -76,7 +81,7 @@ p, h1, h2, h3, h4, h5, h6 {
     grid-column: 1/1 !important;
     grid-row: 3/4;
   }
-}
+} */
 
 .report-email {
   grid-column: 1/2;
@@ -218,7 +223,85 @@ button.top-buttons {
 }
 
 .hamburger-menu {
+  position: fixed;
+  height: 2.5em;
+  width: 3em;
+  top: 13%;
+  right: 5%;
+  transform: translateY(-50%);
+  border: 2px solid #122C5B;
+  padding: 5px;
+  border-radius: 4px;
+  display: none;
+}
+
+.hamburger-menu >div {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.hamburger-menu .bar,  .hamburger-menu .bar:after, .hamburger-menu .bar:before{
   position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  height: 4px;
+  background: #122C5B;
+  transition: all 0.5s ease;
+}
+
+.hamburger-menu .bar:after, .hamburger-menu .bar:before {
+  content: '';
+}
+
+.hamburger-menu .bar:after {
+  top: -1.2em;
+}
+
+.hamburger-menu .bar:before  {
+  top: 1.2em;
+}
+
+.hamburger-menu.open .bar {
+  background: transparent;
+}
+
+.hamburger-menu.open .bar:after {
+  transform: rotate(-45deg);
+}
+
+.hamburger-menu.open .bar:before {
+  transform: rotate(45deg);
+}
+
+.hamburger-menu.open .bar:after, .hamburger-menu.open .bar:before {
+  top: 0;
+}
+
+@media screen and (max-width: 768px)
+{
+  .hamburger-menu {
+    display: flex;
+    z-index: 1000;
+  }
+  
+  .nav-options-container {
+    position: absolute;
+    padding: 3em;
+    flex-direction: column !important;
+    top: 1.5vh;
+    right: 0;
+    z-index: 999;
+    background: var(--primary-app-color);
+    width: 100vw;
+    transform: translateX(100%);
+    transition: transform 0.4s ease-in-out;
+    height: 94.5vh !important;
+  }
+
 }
 
 .nav-options-container {
@@ -229,6 +312,10 @@ button.top-buttons {
   height: 100%;
   list-style: none;
   margin-top: -10px;
+}
+
+.nav-options-container.slide-in {
+  transform: translate(0%);
 }
 
 .nav-options-container .nav-option {
@@ -287,6 +374,7 @@ button.top-buttons {
 }
 
 .carousel-container {
+  z-index: 10;
   height: 82vh;
   position: relative;
   overflow: hidden;
