@@ -12,7 +12,7 @@ import Footer from './components/Footer';
 function AppTemplatePage(props) {
   console.log(props);
   return (
-    <div className="app">
+    <div id="app" className="app">
       <Header></Header>
       <MenuNav {...props}></MenuNav>
       <Switch>
