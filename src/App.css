@@ -307,7 +307,6 @@ button.top-buttons {
   .nav-options-container .nav-option a{
     font-size: 14px !important;
   }
-
 }
 
 @keyframes slide-in {
@@ -316,15 +315,13 @@ button.top-buttons {
     opacity: 0;
   }
   50% {
-    transform: translateX(0) skew(-15deg);
+    transform: translateX(0) skew(-20deg);
   }
-  54.3% {
-    transform: translateX(20px) skew(-8deg);
-  }
-  90% {
-    transform: translateX(0) skew(0);
+  72.3% {
+    transform: translateX(14px) skew(-18deg);
   }
   100% {
+    transform: translateX(0) skew(0);
     opacity: 1;
   }
 }
