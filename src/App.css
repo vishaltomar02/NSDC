@@ -301,8 +301,34 @@ button.top-buttons {
     transition: transform 0.4s ease-in-out;
     height: 94.5vh !important;
   }
+  .nav-options-container .nav-option a.open {
+    animation: slide-in 1.7s ease normal none;
+  }
+  .nav-options-container .nav-option a{
+    font-size: 14px !important;
+  }
 
 }
+
+@keyframes slide-in {
+  0.0% {
+    transform: translateX(400px) skew(-23deg);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(0) skew(-15deg);
+  }
+  54.3% {
+    transform: translateX(20px) skew(-8deg);
+  }
+  90% {
+    transform: translateX(0) skew(0);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 
 .nav-options-container {
   grid-column: 2/4;
