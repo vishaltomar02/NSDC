@@ -22,6 +22,7 @@ const MenuNav = (props) => {
 
   const activeNavItem = (name) => {
     setSelectedNav(name);
+    document.getElementById("app").classList.remove('fixed-height');
     if(navSlide) {
       setNavSlide(false);
       document.getElementById("hamburg").classList.remove('open');

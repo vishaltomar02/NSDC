@@ -9,10 +9,10 @@
 body {
   color: var(--primary-app-color);
   font-family: 'Roboto', sans-serif;
-  scroll-behavior: smooth;
 }
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 p, h1, h2, h3, h4, h5, h6 {
@@ -27,7 +27,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .app.fixed-height {
-  overflow: hidden;
+  overflow-y: hidden;
   height: 100vh;
 }
 
@@ -1093,6 +1093,40 @@ button.top-buttons {
   font-weight: bolder;
   text-transform: uppercase;
 }
+
+@media screen and (max-width: 1024px)
+{
+  .about-content-container {
+    padding: 0 0 2em 0;
+  }
+  
+  .about-content-container .content, .vision-container .content {
+    padding: 0 6em;
+  }
+}
+
+@media screen and (max-width: 992px)
+{
+  .about-content-container {
+    padding: 0 0 1.5em 0;
+  }
+  
+  .about-content-container .content, .vision-container .content {
+    padding: 0 4.2em;
+  }
+}
+
+@media screen and (max-width: 768px)
+{
+  .about-content-container {
+    padding: 0 0 1em 0;
+  }
+  
+  .about-content-container .content, .vision-container .content {
+    padding: 0 2em;
+  }
+}
+
 
 .content h4 {
   font-size: 1.5rem;
