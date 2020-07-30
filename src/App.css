@@ -9,7 +9,7 @@
 body {
   color: var(--primary-app-color);
   font-family: 'Roboto', sans-serif;
-  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 html {
   overflow-x: hidden;
@@ -852,7 +852,7 @@ button.top-buttons {
 .sponsors-cards-container .sponsor-card {
   margin: 1em 0;
   position: relative;
-  padding: 30px;
+  padding: 30px 0px;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -902,7 +902,7 @@ button.top-buttons {
   padding: 4em 12em;
   display: grid;
   font-size: 15px;
-  grid-template-columns: 23% 18% 24% 35%;
+  grid-template-columns: 33% 28% 33%;
 }
 
 @media screen and (max-width: 992px)

@@ -9,7 +9,7 @@ import Loader from '../Loader/Loader';
 //   { name: 'linkedin-in', iconColor: 'rgb(40,103,178)' }
 // ];
 
-const ContactPage = () => {
+const ContactPage = (props) => {
 
   const [loader, setLoader] = useState(true);
 
@@ -24,7 +24,7 @@ const ContactPage = () => {
       {
         loader ? <Loader /> :
           <div>
-            <CommonStrip title="Contact Us" />
+            <CommonStrip title="Contact Us" {...props}/>
             <div className="contact-page-container">
               <div className="footer-items">
                 <div className="address-container">

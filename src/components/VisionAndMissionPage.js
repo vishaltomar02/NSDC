@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Loader from '../Loader/Loader';
 import CommonStrip from './CommonStrip';
 
-const VisionAndMissionPage = () => {
+const VisionAndMissionPage = (props) => {
   const [loader, setLoader] = useState(true);
 
   useEffect(() => {
@@ -16,7 +16,7 @@ const VisionAndMissionPage = () => {
     <div>
       {loader ? <Loader /> :
         <div>
-          <CommonStrip title="Vision And Mission" />
+          <CommonStrip title="Vision And Mission" {...props} />
           <div className="vision-container">
             <div className="content">
               <section className="about-page-header">

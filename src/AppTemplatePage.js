@@ -3,6 +3,8 @@ import { Route , Switch, Redirect } from 'react-router-dom';
 import HomePage from './components/HomePage';
 import VisionAndMissionPage from './components/VisionAndMissionPage';
 import BecomeAVoluteerPage from './components/BecomeAVolunteerPage';
+import PrivacyPolicyPage from './components/PrivacyPolicyPage';
+import TermsPage from './components/TermsPage';
 import AboutPage from './components/AboutPage';
 import ContactPage from './components/ContactPage';
 import Header from './components/Header';
@@ -22,8 +24,10 @@ function AppTemplatePage(props) {
         <Route path="/contact" component={ContactPage}/>
         <Route path="/vision-n-mission" component={VisionAndMissionPage}/>
         <Route path="/become-a-volunteer" component={BecomeAVoluteerPage}/>
+        <Route path="/privacy-policy" component={PrivacyPolicyPage}/>
+        <Route path="/terms" component={TermsPage}/>
       </Switch>
-      <Footer/>
+      <Footer {...props}/>
     </div>
   );
 }

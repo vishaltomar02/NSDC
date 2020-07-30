@@ -1,15 +1,24 @@
 import React from 'react';
+import * as utils from '../HelperFiles/Utils.js';
 
 const usefulLinks = [
-  'What we do',
-  'Become a Volunteer',
+  {name:'What we do', id: 'what-we-do'},
+  {name: 'Become a Volunteer', id: 'become-a-volunteer'},
   'Join With Us',
-  'Privacy Policy',
-  'Terms & Conditions',
+  {name: 'Privacy Policy', id: 'privacy-policy'},
+  {name: 'Terms & Conditions', id: 'terms'},
   'Refund Poilcy'
 ];
 
-const Footer = () => {
+const Footer = (props) => {
+
+  const { history } = props;
+
+  const handleScroll = (id) => {
+    if(id==='what-we-do') utils.scrollToElement('what-we-do', 1000);
+    else history.push({pathname: id});
+  }
+
   return (
     <div className="footer-container">
       <div className="footer-items">
@@ -24,18 +33,18 @@ const Footer = () => {
           {
             usefulLinks.map(
               (item, index) => {
-                return (<a key={index} href='google.com' alt="">{item}</a>);
+                return (<a key={index} onClick={() => handleScroll(item.id)} alt="">{item.name}</a>);
               }
             )
           }
         </div>
       </div>
-      <div className="footer-items" style={{fontSize: '16px'}}>
+      {/* <div className="footer-items" style={{fontSize: '16px'}}>
         <h2>Recent Posts</h2>
         <a style={{marginBottom: '30px'}} href="google.com">We are Hiring</a>
         <a style={{marginBottom: '30px', textTransform: 'uppercase'}} href="google.com">ADMIT SPECIALLY ABLED CATS  AT YODHA</a>
         <a href="google.com">Celebrate this valentine's day with our karma animals.</a>
-      </div>
+      </div> */}
       <div className="footer-items">
         <h2>Get In Touch</h2>
         <div className="address-container">
