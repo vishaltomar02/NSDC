@@ -48,7 +48,7 @@ const MenuNav = (props) => {
     <div className="menu-nav">
       <section className="menu-nav-inner">
         <a className="logo-container" href=" ">
-          <img style={{ height: '100px', width: '100px' }} src={AppLogo} alt="Karma Foundation" />
+          <img style={{ height: '100px', width: '100px' }} src={AppLogo} onClick={() => props.history.push({pathname: '/home'})} alt="Karma Foundation" />
         </a>
         <ul className={ `nav-options-container ${navSlide ? 'slide-in' : ''}`}>
           {navOptions.map((item) => {

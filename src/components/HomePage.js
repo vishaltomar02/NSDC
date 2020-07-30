@@ -76,15 +76,16 @@ const HomePage = () => {
                 </div>
               </section>
               <section className="welcome-text">
-                <h1>Animal Welfare Society</h1>
-                <p>Karma foundation’s vision & mission is to help our street animals in the best possible way utilizing the available resources optimally.</p>
-                <p>We truly believe that to achieve success & to make a difference we need to utilize the existing resources & make each and every animal lover a part of the NGO.</p>
-                <p>We believe in utilizing the existing work force of Vets & volunteers to help the animals in need area wise & funding the treatment of such stray animals in a subsidized & case merit basis.</p>
-                <p>Pune city is our pilot model where we plan to use technology & our team of vets & volunteers to make a optimized & justified treatment model.</p>
-                <p>Once we have success in Pune, we will expand to different cities with the same model.</p>
-                <div className="welcome-button">
+                <h1>Our Vision</h1>
+                  <p>
+                    With a clear vision to take part in social activities of development in various sectors , Praman Techno Foundation has been established to carry development programs on its shoulder.
+                  </p>
+                  <p>
+                    Education , Employment , skill development , Rural development and many sectors are youth demand , we are delight to present our mission to enhance capability of an individual at such extent so that they can understand the need of skills in today world.
+                  </p>
+                {/* <div className="welcome-button">
                   <button>Read More</button>
-                </div>
+                </div> */}
               </section>
             </div>
           </div>

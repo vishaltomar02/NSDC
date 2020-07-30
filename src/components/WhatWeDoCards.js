@@ -44,7 +44,7 @@ const WhatWeDoCards = () => {
   // }
 
   return (
-    <div ref={ref} className="what-we-do-container" >
+    <div ref={ref} id="what-we-do" className="what-we-do-container" >
       <section className="welcome-header-text">
         <h1>What We Do</h1>
       </section>

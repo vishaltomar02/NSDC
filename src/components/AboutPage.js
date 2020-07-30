@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import CommonStrip from './CommonStrip';
 import Loader from '../Loader/Loader';
 
-const HomePage = () => {
+const AboutPage = (props) => {
 
   const [loader, setLoader] = useState(true);
 
@@ -17,7 +17,7 @@ const HomePage = () => {
       {
         loader ? <Loader /> :
           <div>
-            <CommonStrip title="About Us" />
+            <CommonStrip title="About Us" {...props}/>
             <div className="about-content-container">
               <section className="content">
                 <section className="about-page-header">
@@ -44,4 +44,4 @@ const HomePage = () => {
   );
 }
 
-export default HomePage;
+export default AboutPage;

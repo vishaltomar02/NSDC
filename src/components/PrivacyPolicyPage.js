@@ -1,0 +1,57 @@
+import React, { useState, useEffect } from 'react';
+import CommonStrip from './CommonStrip';
+import Loader from '../Loader/Loader';
+
+const PrivacyPolicyPage = (props) => {
+
+  const [loader, setLoader] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoader(false);
+    }, 500);
+  }, []);
+
+  return (
+    <div>
+      {
+        loader ? <Loader /> :
+          <div>
+            <CommonStrip title="Privacy policy" {...props} />
+            <div className="about-content-container">
+              <section className="content">
+                <section className="about-page-header">
+                  <h1>Privacy Policy</h1>
+                </section>
+                <br></br>
+                {/* <h4></h4> */}
+                <p>
+                  We , Praman Techno Foundation offers values and services through our website – <a href="https://www.pramantechnofoundation.com/" rel="noopener noreferrer" target="_blank">www.pramantechnofoundation.com</a></p>
+                {/* <h4>Animal Birth Control(ABC)</h4> */}
+                <p>
+                  This page inform visitors about our policy for collect, use and disclosure of personal information. If anyone decided to use our services then he/she is agree with respect to the policy of our organization.</p>
+                {/* <h4>Animal Adoption</h4> */}
+                <h1>Service Providers</h1>
+                <p>
+                  We may employ third party companies or individuals, or can act as third party for various reasons like :-
+                </p>
+                <ul>
+                  <li>
+                    1.) to facilitate our service
+                  </li>
+                  <li>
+                    2.) to provide the service on our behalf
+                  </li>
+                  <li>
+                    3.)to assist us in analyzing about service usage
+                  </li>
+                </ul>
+              </section>
+            </div>
+          </div>
+      }
+    </div>
+  );
+}
+
+export default PrivacyPolicyPage;

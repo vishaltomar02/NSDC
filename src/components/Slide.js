@@ -1,7 +1,6 @@
 import React from 'react';
 
 const Slide = (props) => {
-  console.log(props.imageText);
   return (
     <div className="slides" style={{backgroundImage: `url(${props.imageUrl})`}}>
       <div className="slides-text">
