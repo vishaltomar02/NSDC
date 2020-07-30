@@ -2,7 +2,6 @@ import React from 'react';
 import * as utils from '../HelperFiles/Utils.js';
 
 const usefulLinks = [
-  {name:'What we do', id: 'what-we-do'},
   {name: 'Become a Volunteer', id: 'become-a-volunteer'},
   'Join With Us',
   {name: 'Privacy Policy', id: 'privacy-policy'},
@@ -30,6 +29,7 @@ const Footer = (props) => {
       <div className="footer-items">
         <h2>Useful Links</h2>
         <div>
+          <a href="#what-we-do">What We Do</a>
           {
             usefulLinks.map(
               (item, index) => {
