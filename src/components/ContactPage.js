@@ -39,7 +39,7 @@ const ContactPage = (props) => {
                       <br></br>
                       <span style={{fontWeight: 'bold'}}>Phone: </span> 9897941722, 9870966955
                       <br></br>
-                      <span style={{fontWeight: 'bold'}}>E-Mail: </span> report @karmafoundation.ngo
+                      <span style={{fontWeight: 'bold'}}>E-Mail: </span> support@pramantechnofoundation.com &nbsp;&nbsp;&nbsp; Info@pramantechnofoundation.com
                       <br></br>
                     </h6>
                     {/* <div className="social-icons contact">
