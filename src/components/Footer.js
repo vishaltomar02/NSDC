@@ -20,12 +20,12 @@ const Footer = (props) => {
 
   return (
     <div className="footer-container">
-      <div className="footer-items">
+      {/* <div className="footer-items">
         <h2>Donate</h2>
         <p>
           We depend only on your donations to rescue, feed, provide necessary veterinary care, maintain the shelter, and fight for the animals.
         </p>
-      </div>
+      </div> */}
       <div className="footer-items">
         <h2>Useful Links</h2>
         <div>
@@ -50,7 +50,7 @@ const Footer = (props) => {
         <div className="address-container">
           <div><i class="fas fa-globe-asia"></i></div>
           <div className="karma-address">
-            <span >Karma Foundation</span>
+            <span >Praman Techno Foundation</span>
             <p style={{textTransform:'none',fontSize: '13px'}}>
               Address: 21/4, Krishna Puram, Baghpat Road, Meerut, 250002.
             </p>
