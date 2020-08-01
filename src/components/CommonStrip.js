@@ -1,4 +1,7 @@
 import React from 'react';
+import PhoneIcon from '../svgs/PhoneIcon';
+import SeeIcon from '../svgs/SeeIcon';
+import InfoIcon from '../svgs/InfoIcon';
 
 const CommonStrip = (props) => {
   const { history } = props;
@@ -10,7 +13,7 @@ const CommonStrip = (props) => {
           {props.title}
           <div className="home-button-container">
             <div className="home-button" onClick={() => history.push({pathname: '/home'})}>
-              <i class="fas fa-home"></i>
+              {props.title==='About Us' ? <InfoIcon/> : (props.title === 'Vision And Mission' ? <SeeIcon/> : <PhoneIcon/>) }
             </div>
           </div>
         </div>
