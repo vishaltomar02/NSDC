@@ -1010,7 +1010,7 @@ button.top-buttons {
   background-image: url('./images/middle-image.jpeg');
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 
 .common-strip >div {
